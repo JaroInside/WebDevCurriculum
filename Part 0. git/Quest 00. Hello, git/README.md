@@ -7,12 +7,26 @@
 ## Topics
 * git
   * `git clone`
+    * 원격저장소에 있는 프로젝트를 로컬로 복사해온다.
   * `git add`
+    * `git add .` -> 모든 새로 생성된 파일을 추적한다. && 모든 변경된 파일을 스테이징 한다.
+    * `git add <fileName>` -> 특정 생성된 파일을 추적한다. || 특정 파일을 스테이징 한다.
   * `git commit`
+    * `git commit -m "<msg>"` -> 추적하고있는, 스테이징된 모든 파일들을 커밋하면서 msg 추가하기
+    * `git commit -m "<msg>" - -amend` -> 마지막 커밋 고치기
   * `git push`
+    * 커밋된 내용을 원격 저장소에 푸시하기
   * `git pull`
+    * 원격 저장소의 내용을 로컬 저장소와 합치기
   * `git branch`
+    * `git branch <branchName>` -> branchName을 가진 새로운 브랜치 생성하기
+    * `git checkout <branchName>` -> 다른 브랜치로 체크아웃 ( 작업공간 변경 ) 하기
+    * `git checkout -b <branchName>` -> 새로운 브랜치 생성과 동시에 체크아웃
   * `git stash`
+    * 작업중인 내용을 add만 해놓고 커밋하지 않은 상태에서 잠시 보관하는 것.
+    * `git stash pop` -> 가장 처음에 stash 한것을 불러온다.
+    * `git stash list` -> stash 된 목록 보여준다.
+    * `git stash apply stash@{0}` -> 특정 stash를 불러온다.
 * GitHub
 
 ## Resources
