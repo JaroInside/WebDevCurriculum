@@ -17,9 +17,13 @@
 
 ## Checklist
 * 자바스크립트를 통해 DOM 객체에 CSS Class를 주거나 없애려면 어떻게 해야 하나요?
+  * `document.getElementById().classList` 에서 remove 혹은 add. toggle도 가능
   * IE9나 그 이전의 옛날 브라우저들에서는 어떻게 해야 하나요?
+    * `document.getElementById().setAttribute('class', )` 로 삭제하거나 추가한다.
 * 자바스크립트의 변수가 유효한 범위는 어떻게 결정되나요?
+  * 기본적으로 함수 스코프를 따른다. try - catch의 catch도 따로 유효 범위를 지닌다.
   * `var`과 `let`으로 변수를 정의하는 방법들은 어떻게 다르게 동작하나요?
+    * 함수 스코프와 블록스코프의 차이
 
 ## Quest
 * Skeleton 디렉토리에 주어진 HTML을 조작하는 스크립트를 완성해 보세요.
